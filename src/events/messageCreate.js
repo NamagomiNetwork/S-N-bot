@@ -1,7 +1,6 @@
 const config = require("../utils/get-config");
 const { MessageEmbed } = require("discord.js");
 const logger = require("../modules/logger");
-const msg_reply = require("../sub-systems/message-reply");
 const url = require("../sub-systems/url-show");
 const twitter_url = require("../sub-systems/twitter-url-show");
 // DBSchema
@@ -17,9 +16,6 @@ module.exports = async (client, message) => {
     url.discord_com(client, message);
     url.discord_ptb_com(client, message);
     twitter_url.x_twitter_com(client, message);
-
-    // とあるメッセージに対して画像を送ったりする
-    msg_reply(message);
 
     // profileデータがある場合はDBから ない場合はconfigからprefixを取得する
     const profileData = await profileModel.findOne({ _id: message.author.id });
