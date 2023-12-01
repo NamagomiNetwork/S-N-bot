@@ -1,10 +1,6 @@
 const cron = require('node-cron')
 const logger = require("../modules/logger")
 const config = require("../utils/get-config");
-const seichi_vote = require('../sub-systems/seichi-vote')
-const seichi_achievement = require('../sub-systems/seichi-achievement')
-const set_seichi_achievement = require('../utils/set-achievements')
-const kagawa_notice = require('../sub-systems/kagawa-notification')
 const OmikujiModel = require('../utils/Schema/OmikujiSchema')
 module.exports = (client) => {
       client.user.setActivity( config.bot.prefix + 'help' , {type: 'PLAYING'});
