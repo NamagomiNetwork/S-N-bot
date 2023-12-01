@@ -22,18 +22,6 @@
         "shell": "true",
         "shutdown": "true"
     },
-    "seichi_vote_notification": {
-        "channel": "1135407155596496937",
-        "role": "1135406736086413352"
-    },
-    "seichi_achievement": {
-        "channel": "1135407155596496937",
-        "role": "1135406736086413352"
-    },
-    "kagawa_notification": {
-        "channel": "1135407155596496937",
-        "role": "1135406736086413352"
-    },
     "url_show_ignore": {
         "channels": [
             "955408172514942976"
